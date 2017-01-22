@@ -8,16 +8,13 @@
 .textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
-  -ms-flex-align: center;
   align-items: center;
   border: none;
   border-radius: 3px;
   box-shadow: none;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 1rem;
   height: 2.285em;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   line-height: 1.5;
   padding-left: 0.75em;
@@ -134,14 +131,10 @@
 
 .checkbox,
 .radio {
-  -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
   vertical-align: top; }
@@ -186,16 +179,13 @@
   .select select {
     -moz-appearance: none;
     -webkit-appearance: none;
-    -ms-flex-align: center;
     align-items: center;
     border: none;
     border-radius: 3px;
     box-shadow: none;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     font-size: 1rem;
     height: 2.285em;
-    -ms-flex-pack: start;
     justify-content: flex-start;
     line-height: 1.5;
     padding-left: 0.75em;
@@ -285,11 +275,8 @@
 
 @media screen and (min-width: 769px) {
   .control-label {
-    -ms-flex-preferred-size: 0;
     flex-basis: 0;
-    -ms-flex-positive: 1;
     flex-grow: 1;
-    -ms-flex-negative: 0;
     flex-shrink: 0;
     margin-right: 1.5em;
     padding-top: 0.5em;
@@ -301,9 +288,7 @@
   .control:not(:last-child) {
     margin-bottom: 0.75rem; }
   .control.has-addons {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: start;
     justify-content: flex-start; }
     .control.has-addons .button,
     .control.has-addons .input,
@@ -340,26 +325,20 @@
       .control.has-addons .button.is-expanded,
       .control.has-addons .input.is-expanded,
       .control.has-addons .select.is-expanded {
-        -ms-flex-positive: 1;
         flex-grow: 1;
-        -ms-flex-negative: 0;
         flex-shrink: 0; }
     .control.has-addons .select select:hover {
       z-index: 2; }
     .control.has-addons .select select:focus, .control.has-addons .select select:active {
       z-index: 3; }
     .control.has-addons.has-addons-centered {
-      -ms-flex-pack: center;
       justify-content: center; }
     .control.has-addons.has-addons-right {
-      -ms-flex-pack: end;
       justify-content: flex-end; }
     .control.has-addons.has-addons-fullwidth .button,
     .control.has-addons.has-addons-fullwidth .input,
     .control.has-addons.has-addons-fullwidth .select {
-      -ms-flex-positive: 1;
       flex-grow: 1;
-      -ms-flex-negative: 0;
       flex-shrink: 0; }
   .control.has-icon .icon {
     color: #dbdbdb;
@@ -398,41 +377,28 @@
     .control.has-icon.has-icon-right .input.is-large + .icon {
       right: 1.875rem; }
   .control.is-grouped {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: start;
     justify-content: flex-start; }
     .control.is-grouped > .control {
-      -ms-flex-preferred-size: 0;
       flex-basis: 0;
-      -ms-flex-negative: 0;
       flex-shrink: 0; }
       .control.is-grouped > .control:not(:last-child) {
         margin-bottom: 0;
         margin-right: 0.75rem; }
       .control.is-grouped > .control.is-expanded {
-        -ms-flex-positive: 1;
         flex-grow: 1;
-        -ms-flex-negative: 1;
         flex-shrink: 1; }
     .control.is-grouped.is-grouped-centered {
-      -ms-flex-pack: center;
       justify-content: center; }
     .control.is-grouped.is-grouped-right {
-      -ms-flex-pack: end;
       justify-content: flex-end; }
   @media screen and (min-width: 769px) {
     .control.is-horizontal {
-      display: -ms-flexbox;
       display: flex; }
       .control.is-horizontal > .control {
-        display: -ms-flexbox;
         display: flex;
-        -ms-flex-preferred-size: 0;
         flex-basis: 0;
-        -ms-flex-positive: 5;
         flex-grow: 5;
-        -ms-flex-negative: 1;
         flex-shrink: 1; } }
   .control.is-loading:after {
     animation: spinAround 500ms infinite linear;
@@ -452,16 +418,13 @@
 .button {
   -moz-appearance: none;
   -webkit-appearance: none;
-  -ms-flex-align: center;
   align-items: center;
   border: none;
   border-radius: 3px;
   box-shadow: none;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 1rem;
   height: 2.285em;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   line-height: 1.5;
   padding-left: 0.75em;
@@ -477,7 +440,6 @@
   border: 1px solid #dbdbdb;
   color: #363636;
   cursor: pointer;
-  -ms-flex-pack: center;
   justify-content: center;
   padding-left: 0.75em;
   padding-right: 0.75em;
@@ -989,7 +951,6 @@
   .button[disabled], .button.is-disabled {
     opacity: 0.5; }
   .button.is-fullwidth {
-    display: -ms-flexbox;
     display: flex;
     width: 100%; }
   .button.is-loading {
@@ -1013,6 +974,167 @@
       top: 50%;
       position: absolute !important; }
 
+.resp-sharing-button__link,
+.resp-sharing-button__icon {
+  display: inline-block; }
+
+.resp-sharing-button__link {
+  text-decoration: none;
+  color: #fff;
+  margin: 0.5em; }
+
+.resp-sharing-button {
+  border-radius: 5px;
+  transition: 25ms ease-out;
+  padding: 0.5em 0.75em;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; }
+
+.resp-sharing-button__icon svg {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.5em;
+  vertical-align: top; }
+
+.resp-sharing-button--small svg {
+  margin: 0;
+  vertical-align: middle; }
+
+/* Non solid icons get a stroke */
+.resp-sharing-button__icon {
+  stroke: #fff;
+  fill: none; }
+
+/* Solid icons get a fill */
+.resp-sharing-button__icon--solid,
+.resp-sharing-button__icon--solidcircle {
+  fill: #fff;
+  stroke: none; }
+
+.resp-sharing-button--twitter {
+  background-color: #55acee; }
+
+.resp-sharing-button--twitter:hover {
+  background-color: #2795e9; }
+
+.resp-sharing-button--pinterest {
+  background-color: #bd081c; }
+
+.resp-sharing-button--pinterest:hover {
+  background-color: #8c0615; }
+
+.resp-sharing-button--facebook {
+  background-color: #3b5998; }
+
+.resp-sharing-button--facebook:hover {
+  background-color: #2d4373; }
+
+.resp-sharing-button--tumblr {
+  background-color: #35465C; }
+
+.resp-sharing-button--tumblr:hover {
+  background-color: #222d3c; }
+
+.resp-sharing-button--reddit {
+  background-color: #5f99cf; }
+
+.resp-sharing-button--reddit:hover {
+  background-color: #3a80c1; }
+
+.resp-sharing-button--google {
+  background-color: #dd4b39; }
+
+.resp-sharing-button--google:hover {
+  background-color: #c23321; }
+
+.resp-sharing-button--linkedin {
+  background-color: #0077b5; }
+
+.resp-sharing-button--linkedin:hover {
+  background-color: #046293; }
+
+.resp-sharing-button--email {
+  background-color: #777; }
+
+.resp-sharing-button--email:hover {
+  background-color: #5e5e5e; }
+
+.resp-sharing-button--xing {
+  background-color: #1a7576; }
+
+.resp-sharing-button--xing:hover {
+  background-color: #114c4c; }
+
+.resp-sharing-button--whatsapp {
+  background-color: #25D366; }
+
+.resp-sharing-button--whatsapp:hover {
+  background-color: #1da851; }
+
+.resp-sharing-button--hackernews {
+  background-color: #FF6600; }
+
+.resp-sharing-button--hackernews:hover, .resp-sharing-button--hackernews:focus {
+  background-color: #FB6200; }
+
+.resp-sharing-button--vk {
+  background-color: #507299; }
+
+.resp-sharing-button--vk:hover {
+  background-color: #43648c; }
+
+.resp-sharing-button--facebook {
+  background-color: #3b5998;
+  border-color: #3b5998; }
+
+.resp-sharing-button--facebook:hover,
+.resp-sharing-button--facebook:active {
+  background-color: #2d4373;
+  border-color: #2d4373; }
+
+.resp-sharing-button--twitter {
+  background-color: #55acee;
+  border-color: #55acee; }
+
+.resp-sharing-button--twitter:hover,
+.resp-sharing-button--twitter:active {
+  background-color: #2795e9;
+  border-color: #2795e9; }
+
+.resp-sharing-button--google {
+  background-color: #dd4b39;
+  border-color: #dd4b39; }
+
+.resp-sharing-button--google:hover,
+.resp-sharing-button--google:active {
+  background-color: #c23321;
+  border-color: #c23321; }
+
+.resp-sharing-button--email {
+  background-color: #777777;
+  border-color: #777777; }
+
+.resp-sharing-button--email:hover,
+.resp-sharing-button--email:active {
+  background-color: #5e5e5e;
+  border-color: #5e5e5e; }
+
+.resp-sharing-button--linkedin {
+  background-color: #0077b5;
+  border-color: #0077b5; }
+
+.resp-sharing-button--linkedin:hover,
+.resp-sharing-button--linkedin:active {
+  background-color: #046293;
+  border-color: #046293; }
+
+.sharing {
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+  border: 3px solid #ddd;
+  padding: 12px 10px;
+  border-radius: 3px; }
+
 body {
   height: 100vh;
   background-color: #14317b;
@@ -1020,11 +1142,8 @@ body {
 
 .wrapper {
   height: 100vh;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center; }
 
 .container {
@@ -1034,21 +1153,14 @@ body {
   max-width: 600px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.39), 0 6px 6px rgba(0, 0, 0, 0.43);
   margin: 30px; }
+  @media (max-width: 768px) {
+    .container {
+      padding: 50px; } }
 
 p {
-  font-size: 19px;
+  font-size: 18px;
   color: #444;
   text-align: center; }
-
-h1 {
-  text-align: center;
-  font-size: 9em;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-  color: #444;
-  font-weight: 700;
-  margin: 0;
-  line-height: 1.3em; }
 
 h3 {
   text-transform: uppercase;
@@ -1057,6 +1169,28 @@ h3 {
   font-weight: 300;
   font-size: 24px;
   margin-top: 0; }
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 20px; } }
+
+.title {
+  text-align: center;
+  font-size: 9em;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: #444;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3em; }
+  @media (max-width: 768px) {
+    .title {
+      font-size: 6em; } }
+  @media (max-width: 320px) {
+    .title {
+      font-size: 3em; } }
+  .title a {
+    text-decoration: none;
+    color: #444; }
 
 .scriptfont {
   font-family: "Bangers", cursive;

@@ -1,0 +1,41 @@
+p {
+  font-size:18px;
+  color:$color3;
+  text-align:center;
+}
+h3 {
+  text-transform:uppercase;
+  text-align: center;
+  color:$color4;
+  font-weight:300;
+  font-size:24px;
+  margin-top:0;
+  @include media("<=tablet") {
+  font-size: 20px;
+  }
+}
+.title {
+  text-align:center;
+  font-size: 9em;
+  text-transform: uppercase;
+  font-family: $font-sans;
+  color: $color3;;
+  font-weight:700;
+  margin: 0;
+  line-height:1.3em;
+  @include media("<=tablet") {
+  font-size: 6em;
+  }
+  @include media("<=phone") {
+  font-size: 3em;
+  }
+  a {
+    text-decoration: none;
+    color: $color3;
+  }
+}
+.scriptfont {
+  font-family: $displayfont4;
+  font-size:1.22em;
+  color:$color2;
+}
