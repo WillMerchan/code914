@@ -1138,24 +1138,28 @@
 body {
   height: 100vh;
   background-color: #14317b;
-  background-image: url("/img/site-bg.jpg"); }
+  background-image: url("/img/site-bg2.jpg");
+  background-size: cover; }
 
 .wrapper {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 767px) {
+    .wrapper {
+      height: auto; } }
 
 .container {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 6px;
-  padding: 100px;
+  padding: 50px;
   max-width: 600px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.39), 0 6px 6px rgba(0, 0, 0, 0.43);
   margin: 30px; }
   @media (max-width: 768px) {
     .container {
-      padding: 50px; } }
+      padding: 15px; } }
 
 p {
   font-size: 18px;
@@ -1167,15 +1171,15 @@ h3 {
   text-align: center;
   color: #999;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 27px;
   margin-top: 0; }
   @media (max-width: 768px) {
     h3 {
-      font-size: 20px; } }
+      font-size: 18px; } }
 
 .title {
   text-align: center;
-  font-size: 9em;
+  font-size: 8em;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   color: #444;
@@ -1184,7 +1188,7 @@ h3 {
   line-height: 1.3em; }
   @media (max-width: 768px) {
     .title {
-      font-size: 6em; } }
+      font-size: 4.5em; } }
   @media (max-width: 320px) {
     .title {
       font-size: 3em; } }

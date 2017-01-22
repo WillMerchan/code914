@@ -6,24 +6,4 @@
 @import "include-media/dist/_include-media.scss";
 @import "partials/layout";
 @import "partials/text";
-
-
-//Mailchimp Styling
-#mc_embed_signup,
-#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
-  background: none;
-  background-color: none;
-}
-#mc_embed_signup .button {
-  background: $color2;
-  width:96%;
-  padding: 25px 22px;
-  line-height:0;
-  text-transform: uppercase;
-  font-size:1.1em;
-  letter-spacing:.05em;
-  font-weight:bold;
-  &:hover {
-    background: #dd4142;
-  }
-}
+@import "partials/forms"
