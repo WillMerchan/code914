@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var moduleImporter = require('sass-module-importer');
 var browserSync = require('browser-sync').create();
 
@@ -11,6 +12,15 @@ gulp.task('sass', function(){
           stream: true
     }))
 });
+
+gulp.task('autoprefix', () =>
+    gulp.src('css/app.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('css'))
+);
 
 gulp.task('browserSync', function() {
   browserSync.init({

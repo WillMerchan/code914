@@ -8,13 +8,16 @@
 .textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
+  -ms-flex-align: center;
   align-items: center;
   border: none;
   border-radius: 3px;
   box-shadow: none;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 1rem;
   height: 2.285em;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   line-height: 1.5;
   padding-left: 0.75em;
@@ -131,10 +134,14 @@
 
 .checkbox,
 .radio {
+  -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
   vertical-align: top; }
@@ -179,13 +186,16 @@
   .select select {
     -moz-appearance: none;
     -webkit-appearance: none;
+    -ms-flex-align: center;
     align-items: center;
     border: none;
     border-radius: 3px;
     box-shadow: none;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     font-size: 1rem;
     height: 2.285em;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     line-height: 1.5;
     padding-left: 0.75em;
@@ -275,8 +285,11 @@
 
 @media screen and (min-width: 769px) {
   .control-label {
+    -ms-flex-preferred-size: 0;
     flex-basis: 0;
+    -ms-flex-positive: 1;
     flex-grow: 1;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
     margin-right: 1.5em;
     padding-top: 0.5em;
@@ -288,7 +301,9 @@
   .control:not(:last-child) {
     margin-bottom: 0.75rem; }
   .control.has-addons {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: start;
     justify-content: flex-start; }
     .control.has-addons .button,
     .control.has-addons .input,
@@ -325,20 +340,26 @@
       .control.has-addons .button.is-expanded,
       .control.has-addons .input.is-expanded,
       .control.has-addons .select.is-expanded {
+        -ms-flex-positive: 1;
         flex-grow: 1;
+        -ms-flex-negative: 0;
         flex-shrink: 0; }
     .control.has-addons .select select:hover {
       z-index: 2; }
     .control.has-addons .select select:focus, .control.has-addons .select select:active {
       z-index: 3; }
     .control.has-addons.has-addons-centered {
+      -ms-flex-pack: center;
       justify-content: center; }
     .control.has-addons.has-addons-right {
+      -ms-flex-pack: end;
       justify-content: flex-end; }
     .control.has-addons.has-addons-fullwidth .button,
     .control.has-addons.has-addons-fullwidth .input,
     .control.has-addons.has-addons-fullwidth .select {
+      -ms-flex-positive: 1;
       flex-grow: 1;
+      -ms-flex-negative: 0;
       flex-shrink: 0; }
   .control.has-icon .icon {
     color: #dbdbdb;
@@ -377,28 +398,41 @@
     .control.has-icon.has-icon-right .input.is-large + .icon {
       right: 1.875rem; }
   .control.is-grouped {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: start;
     justify-content: flex-start; }
     .control.is-grouped > .control {
+      -ms-flex-preferred-size: 0;
       flex-basis: 0;
+      -ms-flex-negative: 0;
       flex-shrink: 0; }
       .control.is-grouped > .control:not(:last-child) {
         margin-bottom: 0;
         margin-right: 0.75rem; }
       .control.is-grouped > .control.is-expanded {
+        -ms-flex-positive: 1;
         flex-grow: 1;
+        -ms-flex-negative: 1;
         flex-shrink: 1; }
     .control.is-grouped.is-grouped-centered {
+      -ms-flex-pack: center;
       justify-content: center; }
     .control.is-grouped.is-grouped-right {
+      -ms-flex-pack: end;
       justify-content: flex-end; }
   @media screen and (min-width: 769px) {
     .control.is-horizontal {
+      display: -ms-flexbox;
       display: flex; }
       .control.is-horizontal > .control {
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-preferred-size: 0;
         flex-basis: 0;
+        -ms-flex-positive: 5;
         flex-grow: 5;
+        -ms-flex-negative: 1;
         flex-shrink: 1; } }
   .control.is-loading:after {
     animation: spinAround 500ms infinite linear;
@@ -418,13 +452,16 @@
 .button {
   -moz-appearance: none;
   -webkit-appearance: none;
+  -ms-flex-align: center;
   align-items: center;
   border: none;
   border-radius: 3px;
   box-shadow: none;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 1rem;
   height: 2.285em;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   line-height: 1.5;
   padding-left: 0.75em;
@@ -440,6 +477,7 @@
   border: 1px solid #dbdbdb;
   color: #363636;
   cursor: pointer;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-left: 0.75em;
   padding-right: 0.75em;
@@ -951,6 +989,7 @@
   .button[disabled], .button.is-disabled {
     opacity: 0.5; }
   .button.is-fullwidth {
+    display: -ms-flexbox;
     display: flex;
     width: 100%; }
   .button.is-loading {
@@ -981,8 +1020,11 @@ body {
 
 .wrapper {
   height: 100vh;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 .container {
@@ -990,13 +1032,17 @@ body {
   border-radius: 6px;
   padding: 100px;
   max-width: 600px;
-  box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.2);
-  margin: 30px;
-  border: 5px solid #fff; }
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.39), 0 6px 6px rgba(0, 0, 0, 0.43);
+  margin: 30px; }
+
+p {
+  font-size: 19px;
+  color: #444;
+  text-align: center; }
 
 h1 {
   text-align: center;
-  font-size: 6em;
+  font-size: 9em;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   color: #444;
@@ -1009,10 +1055,27 @@ h3 {
   text-align: center;
   color: #999;
   font-weight: 300;
-  font-size: 1.28em;
+  font-size: 24px;
   margin-top: 0; }
 
 .scriptfont {
   font-family: "Bangers", cursive;
   font-size: 1.22em;
   color: #f56061; }
+
+#mc_embed_signup,
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+  background: none;
+  background-color: none; }
+
+#mc_embed_signup .button {
+  background: #f56061;
+  width: 96%;
+  padding: 25px 22px;
+  line-height: 0;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: .05em;
+  font-weight: bold; }
+  #mc_embed_signup .button:hover {
+    background: #dd4142; }
