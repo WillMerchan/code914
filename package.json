@@ -1,0 +1,23 @@
+{
+  "name": "code914",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Will Merchan",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.3.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "sass-module-importer": "^1.4.0"
+  }
+}
